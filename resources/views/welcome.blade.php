@@ -15,7 +15,7 @@
                     @endif
                 </div>
 
-                <div class="card-body">
+                <div class="card-body" style="overflow-x: scroll">
                     {{--  table for employees  --}}
                     @if(isset($employees) && $employees->count() > 0)
                     <table id="datatable" class="table table-bordered table-striped text-center">
