@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
-
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/employee/create', 'EmployeeController@create')->name('empoloyee.create'); //loads create view
 Route::post('/employee/store', 'EmployeeController@store')->name('empoloyee.store'); //store employee
@@ -22,3 +21,4 @@ Route::get('/employee/{employee}/edit', 'EmployeeController@edit')->name('empolo
 Route::get('/employee/{employee}', 'EmployeeController@show')->name('empoloyee.show'); //show single employee
 Route::patch('/employee/{employee}', 'EmployeeController@update')->name('empoloyee.update'); //updates employee
 Route::delete('/employee/{employee}', 'EmployeeController@destroy')->name('empoloyee.destroy'); //delete employee
+
